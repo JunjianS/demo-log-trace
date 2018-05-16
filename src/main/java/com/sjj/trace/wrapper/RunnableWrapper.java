@@ -1,7 +1,7 @@
-package com.cmcc.zeus.sp.trace.wrapper;
+package com.sjj.trace.wrapper;
 
-import com.cmcc.zeus.sp.trace.constant.TraceType;
-import com.cmcc.zeus.sp.trace.util.MDCUtil;
+import com.sjj.trace.constant.TraceType;
+import com.sjj.trace.util.MDCUtil;
 
 public class RunnableWrapper implements Runnable {
     

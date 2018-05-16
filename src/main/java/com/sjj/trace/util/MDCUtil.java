@@ -1,8 +1,8 @@
-package com.cmcc.zeus.sp.trace.util;
+package com.sjj.trace.util;
 
 import org.slf4j.MDC;
 
-import com.cmcc.zeus.sp.trace.constant.TraceType;
+import com.sjj.trace.constant.TraceType;
 
 public class MDCUtil {
 

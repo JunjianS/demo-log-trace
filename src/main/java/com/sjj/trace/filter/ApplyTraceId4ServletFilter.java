@@ -1,4 +1,4 @@
-package com.cmcc.zeus.sp.trace.filter;
+package com.sjj.trace.filter;
 
 import java.io.IOException;
 import javax.servlet.Filter;
@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.cmcc.zeus.sp.trace.constant.TraceType;
-import com.cmcc.zeus.sp.trace.util.MDCUtil;
-import com.cmcc.zeus.sp.trace.util.TraceUtil;
+import com.sjj.trace.constant.TraceType;
+import com.sjj.trace.util.MDCUtil;
+import com.sjj.trace.util.TraceUtil;
 
 public class ApplyTraceId4ServletFilter implements Filter {
 	

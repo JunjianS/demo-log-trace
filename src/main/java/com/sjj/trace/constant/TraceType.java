@@ -1,4 +1,4 @@
-package com.cmcc.zeus.sp.trace.constant;
+package com.sjj.trace.constant;
 
 public enum TraceType {
 
