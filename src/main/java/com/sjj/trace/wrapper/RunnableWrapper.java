@@ -3,6 +3,10 @@ package com.sjj.trace.wrapper;
 import com.sjj.trace.constant.TraceType;
 import com.sjj.trace.util.MDCUtil;
 
+/**
+ * 封装Runnable类，用于使用线程池的场景，设置traceId
+ *
+ */
 public class RunnableWrapper implements Runnable {
     
     private Runnable runnable;

@@ -4,6 +4,10 @@ import org.slf4j.MDC;
 
 import com.sjj.trace.constant.TraceType;
 
+/**
+ * MDC属性值操作 
+ *
+ */
 public class MDCUtil {
 
     public static void put(TraceType type, String value) {

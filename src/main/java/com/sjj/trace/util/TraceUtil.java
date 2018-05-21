@@ -4,6 +4,10 @@ import java.util.UUID;
 
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ *  
+ *
+ */
 public class TraceUtil {
 
 	public static final String DEFAULTSOURCE = "unknow";

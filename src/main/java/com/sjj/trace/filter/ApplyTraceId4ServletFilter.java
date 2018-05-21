@@ -15,6 +15,10 @@ import com.sjj.trace.constant.TraceType;
 import com.sjj.trace.util.MDCUtil;
 import com.sjj.trace.util.TraceUtil;
 
+/**
+ * 用于系统间web调用的过滤器,获取请求相应的traceId并设置到MDC
+ * 
+ */
 public class ApplyTraceId4ServletFilter implements Filter {
 	
 	String source = TraceUtil.DEFAULTSOURCE;
