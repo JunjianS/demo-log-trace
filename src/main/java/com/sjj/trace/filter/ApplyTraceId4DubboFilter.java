@@ -1,7 +1,6 @@
 package com.sjj.trace.filter;
 
 import org.apache.commons.lang3.StringUtils;
-
 import com.alibaba.dubbo.rpc.Filter;
 import com.alibaba.dubbo.rpc.Invocation;
 import com.alibaba.dubbo.rpc.Invoker;
@@ -17,9 +16,10 @@ import com.sjj.trace.util.TraceUtil;
  * 用于dubbo服务系统间调用的过滤器,服务消费端埋入相应的traceId，服务提供端获取相应的traceId并设置到MDC
  *
  */
+
 public class ApplyTraceId4DubboFilter implements Filter {
 	public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-				
+
 		/**
 		 * 服务消费端，生成traceId并设置到dubbo上下文
 		 */
@@ -30,7 +30,7 @@ public class ApplyTraceId4DubboFilter implements Filter {
 			}
 			RpcContext.getContext().setAttachment(TraceType.REQUEST.getName(), traceId);
 		}
-		
+
 		/**
 		 * 服务提供端，从上下文获取traceId并设置到MDC
 		 */

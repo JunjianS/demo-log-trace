@@ -5,7 +5,7 @@ import java.util.UUID;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- *  
+ * traceId生成方法，source 
  *
  */
 public class TraceUtil {
